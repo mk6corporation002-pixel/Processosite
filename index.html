@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bellavista · Cabaña Boutique en Pucón, Chile</title>
+  <meta name="description" content="Bellavista, cabaña boutique en Pucón: casa completa para hasta 10 personas, tinaja panorámica y vista al Lago Villarrica y al volcán.">
+  <meta property="og:title" content="Bellavista · Cabaña Boutique en Pucón">
+  <meta property="og:description" content="Tu casa entre el lago y el volcán.">
+  <meta property="og:image" content="assets/images/hero/hero.jpg">
+  <meta name="theme-color" content="#173a2d">
+  <link rel="icon" href="assets/images/logo/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- =====================================================
+     ÍCONES (sprite SVG – use com <svg><use href="#i-nome"/></svg>)
+     ===================================================== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M8 14h.01M12 14h.01M16 14h.01M8 17h.01M12 17h.01"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.3c2.1.7 3.5 2.8 3.5 5.7"/></symbol>
+    <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 19V8M21 19v-6a3 3 0 0 0-3-3H8v4M3 13h18M3 17h18"/><path d="M5 9.5h3"/></symbol>
+    <symbol id="i-pot" viewBox="0 0 24 24"><path d="M4 11h16v6a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-6zM2 11h20M9 7.5c0-1.5 1-1.5 1-3M14 7.5c0-1.5 1-1.5 1-3"/></symbol>
+    <symbol id="i-bath" viewBox="0 0 24 24"><path d="M3 12h18v3a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5v-3zM6 12V5.5A2.5 2.5 0 0 1 8.5 3c1.2 0 2 .8 2.3 1.8M7 20l-1 2M17 20l1 2"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3.5 10.5 12 3.5l8.5 7V20a1 1 0 0 1-1 1h-15a1 1 0 0 1-1-1v-9.5z"/><path d="M9.5 21v-6h5v6"/></symbol>
+    <symbol id="i-sofa" viewBox="0 0 24 24"><path d="M5 11V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v3"/><path d="M3 13a2 2 0 0 1 4 0v2h10v-2a2 2 0 0 1 4 0v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4zM6 19v2M18 19v2"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M10 3l1.6 4.4L16 9l-4.4 1.6L10 15l-1.6-4.4L4 9l4.4-1.6L10 3z"/><path d="M18 14l.8 2.2L21 17l-2.2.8L18 20l-.8-2.2L15 17l2.2-.8L18 14z"/></symbol>
+    <symbol id="i-waves" viewBox="0 0 24 24"><path d="M2 7c2-1.5 3.5-1.5 5 0s3.5 1.5 5 0 3.5-1.5 5 0 3.5 1.5 5 0M2 12c2-1.5 3.5-1.5 5 0s3.5 1.5 5 0 3.5-1.5 5 0 3.5 1.5 5 0M2 17c2-1.5 3.5-1.5 5 0s3.5 1.5 5 0 3.5-1.5 5 0 3.5 1.5 5 0"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24"><path d="M2.5 20 9 6l4 8 2-3 6.5 9h-19z"/><path d="M7 10.5l2 1.5 1.5-1.5"/></symbol>
+    <symbol id="i-steps" viewBox="0 0 24 24"><path d="M6 16v-3.5C6 9 4 8 4 5.5 4 3.6 5.1 2.5 6.5 2.5S9 3.8 9 6c0 2.5-1 3.5-1 6.5V16M5 16h4v2.5a2 2 0 0 1-4 0V16zM18 20v-3.5c0-3.5 2-4.5 2-7 0-1.9-1.1-3-2.5-3S15 7.8 15 10c0 2.5 1 3.5 1 6.5V20M15 20h4v1"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M4.5 12.5 9.5 17.5 19.5 6.5"/></symbol>
+    <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-arrow-dr" viewBox="0 0 24 24"><path d="M7 7l10 10M17 8v9H8"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M21.5 2.5 10.5 13.5M21.5 2.5l-7 19-4-8-8-4 19-7z"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 21c-3.9 0-6.5-2.6-6.5-6.2 0-3.3 2.3-5.2 3.4-7.8.3 2 1.3 3 2.4 3.5 0-3.5 1.7-6.2 4.2-7.5-.5 3.2 1.1 5 2.3 6.8 1 1.5 1.7 3.1 1.7 5 0 3.6-3.2 6.2-7.5 6.2z"/></symbol>
+    <symbol id="i-chef" viewBox="0 0 24 24"><path d="M7 14.5V20h10v-5.5M7 14.5a4 4 0 0 1-1.2-7.8A4.5 4.5 0 0 1 12 4a4.5 4.5 0 0 1 6.2 2.7A4 4 0 0 1 17 14.5H7zM7 17h10"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M3.5 20.5l1.4-4.2A8.5 8.5 0 1 1 8 19.3l-4.5 1.2z"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.8"/><path d="M21 16l-5-5-9 9"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  </defs>
+</svg>
+
+<!-- =====================================================
+     HEADER
+     ===================================================== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#inicio" class="nav__brand">Bellavista</a>
+      <ul class="nav__list">
+        <li><a href="#la-casa" data-i18n="nav.casa">La casa</a></li>
+        <li><a href="#la-tinaja" data-i18n="nav.tinaja">La tinaja</a></li>
+        <li><a href="#galeria" data-i18n="nav.galeria">Galería</a></li>
+        <li><a href="#experiencias" data-i18n="nav.experiencias">Experiencias</a></li>
+        <li><a href="#guia" data-i18n="nav.guia">Guía de estadía</a></li>
+      </ul>
+      <div class="lang" role="group" aria-label="Idioma">
+        <button class="lang__btn is-active" data-lang="es">ES</button>
+        <button class="lang__btn" data-lang="en">EN</button>
+        <button class="lang__btn" data-lang="pt">PT</button>
+      </div>
+    </nav>
+
+    <a href="#consulta" class="btn btn--accent header__cta">
+      <svg class="icon"><use href="#i-calendar"/></svg>
+      <span data-i18n="cta.fechas">Consultar fechas</span>
+    </a>
+
+    <button class="burger" id="burger" aria-label="Menú" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<!-- =====================================================
+     HERO
+     ===================================================== -->
+<section class="hero" id="inicio">
+  <div class="hero__bg" style="background-image:url('assets/images/hero/hero.jpg')"></div>
+  <div class="hero__overlay"></div>
+  <svg class="arcs arcs--hero" viewBox="0 0 400 400" aria-hidden="true">
+    <g fill="none" stroke="currentColor"><circle cx="0" cy="400" r="80"/><circle cx="0" cy="400" r="120"/><circle cx="0" cy="400" r="160"/><circle cx="0" cy="400" r="200"/><circle cx="0" cy="400" r="240"/><circle cx="0" cy="400" r="280"/><circle cx="0" cy="400" r="320"/></g>
+  </svg>
+
+  <img src="assets/images/logo/logo.png" alt="Bellavista · Cabaña Boutique · Pucón, Chile" class="hero__logo">
+
+  <div class="container hero__content">
+    <p class="eyebrow eyebrow--light"><svg class="icon"><use href="#i-pin"/></svg> <span data-i18n="hero.eyebrow">Pucón · La Araucanía · Chile</span></p>
+    <h1 class="display display--xl display--light" data-i18n="hero.title">Tu casa entre<br><em>el lago y el volcán.</em></h1>
+    <p class="hero__text" data-i18n="hero.text">Una casa de montaña para reunirse, descansar y mirar lejos. Hasta 10 personas, con tinaja panorámica y el paisaje de Villarrica al frente.</p>
+    <div class="hero__actions">
+      <a href="#consulta" class="btn btn--accent btn--lg"><span data-i18n="hero.cta1">Consultar disponibilidad</span> <svg class="icon"><use href="#i-arrow-dr"/></svg></a>
+      <a href="#la-casa" class="link link--light"><span data-i18n="hero.cta2">Conocer la casa</span> <svg class="icon"><use href="#i-chevron"/></svg></a>
+    </div>
+  </div>
+
+  <ol class="hero__highlights">
+    <li><span class="num">01</span><span data-i18n="hero.h1">Casa completa</span></li>
+    <li><span class="num">02</span><span data-i18n="hero.h2">Vista a Lago Villarrica</span></li>
+    <li><span class="num">03</span><span data-i18n="hero.h3">Tinaja para volver al ritmo</span></li>
+  </ol>
+</section>
+
+<!-- =====================================================
+     BARRA DE ATRIBUTOS
+     ===================================================== -->
+<section class="specs">
+  <div class="container">
+    <div class="specs__card reveal">
+      <p class="specs__intro"><svg class="icon icon--accent"><use href="#i-sparkle"/></svg> <span data-i18n="specs.intro">Una escapada con espacio para todos.</span></p>
+      <ul class="specs__grid">
+        <li><svg class="icon icon--lg icon--accent"><use href="#i-users"/></svg><div><strong data-i18n="specs.a1">Hasta 10</strong><small data-i18n="specs.a1s">huéspedes</small></div></li>
+        <li><svg class="icon icon--lg icon--accent"><use href="#i-bed"/></svg><div><strong data-i18n="specs.a2">1 suite</strong><small data-i18n="specs.a2s">para descansar</small></div></li>
+        <li><svg class="icon icon--lg icon--accent"><use href="#i-pot"/></svg><div><strong data-i18n="specs.a3">Sala, cocina y comedor</strong><small data-i18n="specs.a3s">en concepto abierto</small></div></li>
+        <li><svg class="icon icon--lg icon--accent"><use href="#i-bath"/></svg><div><strong data-i18n="specs.a4">2 baños sociales</strong><small data-i18n="specs.a4s">para el grupo</small></div></li>
+        <li><svg class="icon icon--lg icon--accent"><use href="#i-home"/></svg><div><strong data-i18n="specs.a5">3 habitaciones</strong><small data-i18n="specs.a5s">para compartir</small></div></li>
+        <li><svg class="icon icon--lg icon--accent"><use href="#i-sofa"/></svg><div><strong data-i18n="specs.a6">Saleta íntima</strong><small data-i18n="specs.a6s">para bajar el ritmo</small></div></li>
+      </ul>
+      <a href="#consulta" class="link specs__link"><span data-i18n="specs.cta">Explorar fechas</span> <svg class="icon"><use href="#i-arrow-ur"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     LA CASA
+     ===================================================== -->
+<section class="section about" id="la-casa">
+  <div class="container about__grid">
+    <div class="about__content reveal">
+      <p class="eyebrow"><svg class="icon"><use href="#i-home"/></svg> <span data-i18n="casa.eyebrow">Bellavista, a tu ritmo</span></p>
+      <h2 class="display display--lg" data-i18n="casa.title">Más que llegar,<br><em>es habitar la vista.</em></h2>
+      <p data-i18n="casa.p1">Bellavista nace para los días sin prisa: desayunos largos, conversaciones junto a la madera y una casa donde el grupo encuentra su propio rincón. Aquí la experiencia no se divide en habitaciones: se comparte completa.</p>
+      <p data-i18n="casa.p2">La montaña, el lago y el volcán cambian de color durante el día. Desde la casa, ese paisaje se vuelve parte de la estadía.</p>
+      <a href="#galeria" class="link"><span data-i18n="casa.cta">Recorrer los espacios</span> <svg class="icon"><use href="#i-chevron"/></svg></a>
+    </div>
+
+    <div class="about__media reveal">
+      <img src="assets/images/casa/casa-exterior.jpg" alt="Exterior de la cabaña Bellavista" class="about__img about__img--main" loading="lazy">
+      <figure class="about__frame">
+        <img src="assets/images/casa/casa-volcan.jpg" alt="La cabaña con el volcán nevado al fondo" loading="lazy">
+      </figure>
+      <div class="about__seal" data-i18n="casa.seal">Un refugio<br>con horizonte</div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     LA TINAJA
+     ===================================================== -->
+<section class="split" id="la-tinaja">
+  <div class="split__media" style="background-image:url('assets/images/tinaja/tinaja.jpg')" role="img" aria-label="Tinaja con aperitivos y vista al bosque"></div>
+  <div class="split__panel">
+    <div class="split__inner reveal">
+      <p class="eyebrow eyebrow--light"><svg class="icon"><use href="#i-waves"/></svg> <span data-i18n="tinaja.eyebrow">Agua caliente, horizonte abierto</span></p>
+      <h2 class="display display--lg display--light" data-i18n="tinaja.title">La pausa<br>tiene<br><em>vista al lago.</em></h2>
+      <p data-i18n="tinaja.text">Cuando cae la tarde, la tinaja propone otro ritmo. Agua caliente, aire de montaña y el horizonte de Villarrica: un lugar para cerrar el día con el grupo que elegiste traer.</p>
+      <ul class="checklist">
+        <li><svg class="icon icon--gold"><use href="#i-check"/></svg><span data-i18n="tinaja.c1">Una experiencia exterior pensada para mirar lejos.</span></li>
+        <li><svg class="icon icon--gold"><use href="#i-check"/></svg><span data-i18n="tinaja.c2">El bosque aporta privacidad; el paisaje, perspectiva.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     GALERÍA
+     ===================================================== -->
+<section class="section gallery" id="galeria">
+  <svg class="arcs arcs--gallery" viewBox="0 0 400 400" aria-hidden="true">
+    <g fill="none" stroke="currentColor"><circle cx="400" cy="400" r="120"/><circle cx="400" cy="400" r="160"/><circle cx="400" cy="400" r="200"/><circle cx="400" cy="400" r="240"/><circle cx="400" cy="400" r="280"/><circle cx="400" cy="400" r="320"/></g>
+  </svg>
+  <div class="container">
+    <div class="gallery__head reveal">
+      <div>
+        <p class="eyebrow"><svg class="icon"><use href="#i-bed"/></svg> <span data-i18n="gal.eyebrow">Las fotos de Bellavista</span></p>
+        <h2 class="display display--lg" data-i18n="gal.title">Un lugar para<br><em>compartir.</em></h2>
+      </div>
+      <p class="gallery__lead" data-i18n="gal.lead">Una selección para sentir Bellavista: convivencia, agua y horizonte. Cuando quieras, recorre cada rincón de la casa a tu propio ritmo.</p>
+    </div>
+
+    <div class="gallery__bar">
+      <button class="btn btn--outline" id="openTour"><span data-i18n="gal.btn">Recorre la casa por ambiente</span> <svg class="icon"><use href="#i-chevron"/></svg></button>
+      <p class="gallery__quote" data-i18n="gal.quote">Recorre cada ambiente como una nota de viaje, sin perder el hilo de la casa.</p>
+    </div>
+
+    <div class="gallery__sub">
+      <h3 class="serif-sm" data-i18n="gal.sub">Casa · agua · horizonte</h3>
+      <p data-i18n="gal.subtext">Siete momentos para sentir Bellavista antes de explorar cada ambiente.</p>
+    </div>
+
+    <div class="gallery__grid">
+      <a href="assets/images/galeria/galeria-1.jpg" class="g-item g-item--wide"><img src="assets/images/galeria/galeria-1.jpg" alt="Llegada a la cabaña" loading="lazy"><span class="g-item__cap"><span data-i18n="gal.g1">Llegada a la cabaña</span><svg class="icon"><use href="#i-arrow-ur"/></svg></span></a>
+      <a href="assets/images/galeria/galeria-2.jpg" class="g-item"><img src="assets/images/galeria/galeria-2.jpg" alt="Sala de estar junto a la estufa" loading="lazy"><span class="g-item__cap"><span data-i18n="gal.g2">Sala de estar junto a la estufa</span><svg class="icon"><use href="#i-arrow-ur"/></svg></span></a>
+      <a href="assets/images/galeria/galeria-3.jpg" class="g-item g-item--wide"><img src="assets/images/galeria/galeria-3.jpg" alt="Comedor con vista al lago" loading="lazy"><span class="g-item__cap"><span data-i18n="gal.g3">Comedor con vista al lago</span><svg class="icon"><use href="#i-arrow-ur"/></svg></span></a>
+      <a href="assets/images/galeria/galeria-4.jpg" class="g-item g-item--tall"><img src="assets/images/galeria/galeria-4.jpg" alt="Atardecer desde la tinaja" loading="lazy"><span class="g-item__cap"><span data-i18n="gal.g4">Atardecer desde la tinaja</span><svg class="icon"><use href="#i-arrow-ur"/></svg></span></a>
+      <a href="assets/images/galeria/galeria-5.jpg" class="g-item g-item--wide"><img src="assets/images/galeria/galeria-5.jpg" alt="Habitación con luz de tarde" loading="lazy"><span class="g-item__cap"><span data-i18n="gal.g5">Habitación con luz de tarde</span><svg class="icon"><use href="#i-arrow-ur"/></svg></span></a>
+      <a href="assets/images/galeria/galeria-6.jpg" class="g-item g-item--wide"><img src="assets/images/galeria/galeria-6.jpg" alt="Vista al volcán desde el fondo de la casa" loading="lazy"><span class="g-item__cap"><span data-i18n="gal.g6">Vista al volcán desde el fondo de la casa</span><svg class="icon"><use href="#i-arrow-ur"/></svg></span></a>
+      <a href="assets/images/galeria/galeria-7.jpg" class="g-item"><img src="assets/images/galeria/galeria-7.jpg" alt="Vista abierta al lago" loading="lazy"><span class="g-item__cap"><span data-i18n="gal.g7">Vista abierta al lago</span><svg class="icon"><use href="#i-arrow-ur"/></svg></span></a>
+    </div>
+
+    <div class="signature">
+      <div class="trail" aria-hidden="true">
+        <svg class="icon icon--accent"><use href="#i-mountain"/></svg><i></i>
+        <svg class="icon icon--accent"><use href="#i-waves"/></svg><i></i>
+        <svg class="icon icon--accent"><use href="#i-home"/></svg>
+      </div>
+      <div class="signature__brand"><strong>Bellavista</strong><small>Cabaña Boutique · Pucón</small></div>
+      <p class="signature__quote" data-i18n="gal.sign">La casa se revela entre madera, agua y montaña.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     EXPERIENCIAS + SERVICIOS
+     ===================================================== -->
+<section class="exp" id="experiencias">
+  <aside class="exp__aside">
+    <div class="exp__sticky" style="background-image:url('assets/images/experiencias/experiencias.jpg')">
+      <div class="exp__aside-content">
+        <p class="kicker">Bellavista</p>
+        <h2 class="display display--md display--light" data-i18n="exp.asideTitle">Tiempo para<br><em>disfrutar a tu manera.</em></h2>
+        <p class="kicker">Pucón · La Araucanía</p>
+      </div>
+    </div>
+  </aside>
+
+  <div class="exp__main">
+    <div class="exp__block reveal">
+      <p class="eyebrow"><svg class="icon"><use href="#i-steps"/></svg> <span data-i18n="exp.eyebrow">Diseña tu estadía</span></p>
+      <h2 class="display display--lg" data-i18n="exp.title">Experiencias para<br><em>sentir más.</em></h2>
+      <p class="exp__lead" data-i18n="exp.lead">Cuéntanos qué te gustaría vivir en Pucón. Coordinamos con anticipación las opciones que mejor acompañen el ritmo de tu grupo.</p>
+
+      <ol class="exp__list">
+        <li>
+          <span class="num num--blue">01</span><svg class="icon icon--lg icon--accent"><use href="#i-sparkle"/></svg>
+          <div><h3 data-i18n="exp.e1">Experiencias de bienestar con hongos</h3><p data-i18n="exp.e1t">Con operadores autorizados y coordinación previa.</p></div>
+        </li>
+        <li>
+          <span class="num num--blue">02</span><svg class="icon icon--lg icon--accent"><use href="#i-waves"/></svg>
+          <div><h3 data-i18n="exp.e2">Terapias holísticas</h3><p data-i18n="exp.e2t">Espacios de pausa, reconexión y cuidado personal.</p></div>
+        </li>
+        <li>
+          <span class="num num--blue">03</span><svg class="icon icon--lg icon--accent"><use href="#i-mountain"/></svg>
+          <div><h3 data-i18n="exp.e3">Deportes de aventura</h3><p data-i18n="exp.e3t">Montaña, agua y aire libre para distintos ritmos.</p></div>
+        </li>
+        <li>
+          <span class="num num--blue">04</span><svg class="icon icon--lg icon--accent"><use href="#i-chef"/></svg>
+          <div><h3 data-i18n="exp.e4">Gastronomía local</h3><p data-i18n="exp.e4t">Sabores del sur, cocinas de autor y encuentros para compartir.</p></div>
+        </li>
+      </ol>
+    </div>
+
+    <div class="services reveal">
+      <svg class="arcs arcs--services" viewBox="0 0 400 400" aria-hidden="true">
+        <g fill="none" stroke="currentColor"><circle cx="400" cy="400" r="120"/><circle cx="400" cy="400" r="160"/><circle cx="400" cy="400" r="200"/><circle cx="400" cy="400" r="240"/><circle cx="400" cy="400" r="280"/></g>
+      </svg>
+      <svg class="icon icon--lg services__home"><use href="#i-home"/></svg>
+      <p class="eyebrow eyebrow--light"><svg class="icon"><use href="#i-sparkle"/></svg> <span data-i18n="srv.eyebrow">Servicios a medida</span></p>
+      <h2 class="display display--md display--light" data-i18n="srv.title">Mordomías para<br><em>llegar ligero.</em></h2>
+
+      <ol class="services__list">
+        <li><span class="num num--gold">01</span><div><h4 data-i18n="srv.s1">Limpieza diaria</h4><p data-i18n="srv.s1t">Para mantener la casa lista para disfrutar.</p></div></li>
+        <li><span class="num num--gold">02</span><div><h4 data-i18n="srv.s2">Despensa abastecida</h4><p data-i18n="srv.s2t">Alimentos y bebidas coordinados antes de tu llegada.</p></div></li>
+        <li><span class="num num--gold">03</span><div><h4 data-i18n="srv.s3">Transfer al aeropuerto</h4><p data-i18n="srv.s3t">Una llegada y salida más simples, con reserva previa.</p></div></li>
+        <li><span class="num num--gold">04</span><div><h4 data-i18n="srv.s4">Chofer</h4><p data-i18n="srv.s4t">Traslados y recorridos coordinados según tu itinerario.</p></div></li>
+        <li><span class="num num--gold">05</span><div><h4 data-i18n="srv.s5">Lavandería</h4><p data-i18n="srv.s5t">Un apoyo práctico para estadías más cómodas.</p></div></li>
+      </ol>
+
+      <div class="services__foot">
+        <p data-i18n="srv.note">Servicios sujetos a coordinación previa, disponibilidad y condiciones de cada proveedor.</p>
+        <a href="#consulta" class="btn btn--accent"><span data-i18n="srv.cta">Coordinar mi estadía</span> <svg class="icon"><use href="#i-arrow-dr"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     GUÍA – QUÉ HACER EN PUCÓN
+     ===================================================== -->
+<section class="guide" id="guia">
+  <svg class="guide__topo" viewBox="0 0 320 320" aria-hidden="true">
+    <g fill="none" stroke="currentColor" stroke-width="1">
+      <path d="M20 0c40 60 10 110 60 150s120 30 140 90 20 80 100 80"/>
+      <path d="M50 0c40 55 15 100 60 135s110 35 135 85 25 75 75 75"/>
+      <path d="M85 0c35 50 20 90 60 120s95 40 125 80 30 60 50 60"/>
+      <path d="M120 0c30 45 25 80 60 105s80 40 110 70"/>
+      <path d="M160 0c25 40 30 70 60 90s65 35 100 50"/>
+      <path d="M200 0c20 30 35 55 60 70s45 25 60 30"/>
+    </g>
+    <path class="guide__river" d="M0 40c60 30 90 90 130 130s90 60 120 150" fill="none" stroke-width="14" stroke-linecap="round"/>
+  </svg>
+
+  <div class="container guide__grid">
+    <div class="guide__main">
+      <div class="reveal">
+        <p class="eyebrow eyebrow--light"><svg class="icon"><use href="#i-steps"/></svg> <span data-i18n="guia.eyebrow">Qué hacer en Pucón</span></p>
+        <div class="trail trail--light" aria-hidden="true">
+          <svg class="icon"><use href="#i-mountain"/></svg><i></i>
+          <svg class="icon"><use href="#i-waves"/></svg><i></i>
+          <svg class="icon"><use href="#i-home"/></svg>
+        </div>
+        <h2 class="display display--lg display--light" data-i18n="guia.title">Tu guía para<br><em>salir a explorar.</em></h2>
+        <p class="guide__lead" data-i18n="guia.lead">Parques, agua, termas y paisaje: cuatro maneras de disfrutar Pucón durante tu estadía. Confirma previamente horarios, accesos y condiciones con las fuentes oficiales.</p>
+      </div>
+
+      <div class="guide__cards">
+        <article class="place reveal">
+          <div class="place__bg" style="background-image:url('assets/images/guia/guia-1.jpg')"></div>
+          <span class="place__num">01</span>
+          <div class="place__body">
+            <p class="place__where" data-i18n="guia.p1w">Parque Nacional Huerquehue</p>
+            <h3 data-i18n="guia.p1">Senderos entre araucarias.</h3>
+            <p data-i18n="guia.p1t">Bosques antiguos, lagos y rutas para elegir según el tiempo y el ritmo del grupo.</p>
+            <a href="https://www.conaf.cl/parques/parque-nacional-huerquehue/" target="_blank" rel="noopener" class="place__link"><span data-i18n="guia.link">Ver información oficial</span> <svg class="icon"><use href="#i-arrow-ur"/></svg></a>
+          </div>
+        </article>
+        <article class="place reveal">
+          <div class="place__bg" style="background-image:url('assets/images/guia/guia-2.jpg')"></div>
+          <span class="place__num">02</span>
+          <div class="place__body">
+            <p class="place__where" data-i18n="guia.p2w">Ojos del Caburgua</p>
+            <h3 data-i18n="guia.p2">Agua turquesa y cascadas.</h3>
+            <p data-i18n="guia.p2t">Una escapada natural para contemplar el agua, recorrer senderos cercanos y respirar bosque.</p>
+            <a href="https://www.chile.travel/" target="_blank" rel="noopener" class="place__link"><span data-i18n="guia.link">Ver información oficial</span> <svg class="icon"><use href="#i-arrow-ur"/></svg></a>
+          </div>
+        </article>
+        <article class="place reveal">
+          <div class="place__bg" style="background-image:url('assets/images/guia/guia-3.jpg')"></div>
+          <span class="place__num">03</span>
+          <div class="place__body">
+            <p class="place__where" data-i18n="guia.p3w">Termas de la zona</p>
+            <h3 data-i18n="guia.p3">Agua termal entre el bosque.</h3>
+            <p data-i18n="guia.p3t">Pozones naturales y vapor de montaña para un día de descanso total.</p>
+            <a href="https://www.chile.travel/" target="_blank" rel="noopener" class="place__link"><span data-i18n="guia.link">Ver información oficial</span> <svg class="icon"><use href="#i-arrow-ur"/></svg></a>
+          </div>
+        </article>
+        <article class="place reveal">
+          <div class="place__bg" style="background-image:url('assets/images/guia/guia-4.jpg')"></div>
+          <span class="place__num">04</span>
+          <div class="place__body">
+            <p class="place__where" data-i18n="guia.p4w">Lago Villarrica</p>
+            <h3 data-i18n="guia.p4">Playa, costanera y atardecer.</h3>
+            <p data-i18n="guia.p4t">Caminatas junto al lago, deportes náuticos y la mejor luz al final del día.</p>
+            <a href="https://www.chile.travel/" target="_blank" rel="noopener" class="place__link"><span data-i18n="guia.link">Ver información oficial</span> <svg class="icon"><use href="#i-arrow-ur"/></svg></a>
+          </div>
+        </article>
+        <article class="place place--wide reveal">
+          <div class="place__bg" style="background-image:url('assets/images/guia/guia-5.jpg')"></div>
+          <span class="place__num">05</span>
+          <div class="place__body">
+            <p class="place__where" data-i18n="guia.p5w">Centro de Montaña Pillán</p>
+            <h3 data-i18n="guia.p5">La montaña, más cerca.</h3>
+            <p data-i18n="guia.p5t">Un paseo panorámico para mirar lagos y volcanes desde las laderas del Villarrica. Revisa antes el estado de las actividades.</p>
+            <a href="https://www.chile.travel/" target="_blank" rel="noopener" class="place__link"><span data-i18n="guia.link">Ver información oficial</span> <svg class="icon"><use href="#i-arrow-ur"/></svg></a>
+          </div>
+        </article>
+      </div>
+
+      <p class="guide__source"><span data-i18n="guia.source">Información de orientación basada en</span> <a href="https://www.municipalidadpucon.cl/" target="_blank" rel="noopener">Turismo Pucón</a> <span data-i18n="guia.and">y</span> <a href="https://www.chile.travel/" target="_blank" rel="noopener">Chile Travel</a>.</p>
+    </div>
+
+    <aside class="location reveal">
+      <div class="location__head">
+        <div><p class="kicker kicker--muted" data-i18n="guia.locK">Ubicación real</p><h3>Bellavista, Pucón</h3></div>
+        <svg class="icon icon--lg"><use href="#i-pin"/></svg>
+      </div>
+      <!-- Troque o src pelo "Incorporar um mapa" do Google Maps com a localização exata -->
+      <iframe class="location__map" src="https://www.google.com/maps?q=Puc%C3%B3n%2C%20Chile&z=12&output=embed" title="Mapa de Bellavista, Pucón" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </aside>
+  </div>
+</section>
+
+<!-- =====================================================
+     CONSULTA / RESERVA
+     ===================================================== -->
+<section class="section booking" id="consulta">
+  <svg class="arcs arcs--booking" viewBox="0 0 400 400" aria-hidden="true">
+    <g fill="none" stroke="currentColor"><circle cx="0" cy="400" r="120"/><circle cx="0" cy="400" r="160"/><circle cx="0" cy="400" r="200"/><circle cx="0" cy="400" r="240"/><circle cx="0" cy="400" r="280"/><circle cx="0" cy="400" r="320"/><circle cx="0" cy="400" r="360"/></g>
+  </svg>
+  <div class="container booking__grid">
+    <div class="booking__info reveal">
+      <p class="eyebrow"><svg class="icon"><use href="#i-calendar"/></svg> <span data-i18n="book.eyebrow">Consulta tu estadía</span></p>
+      <div class="trail" aria-hidden="true">
+        <svg class="icon icon--accent"><use href="#i-mountain"/></svg><i></i>
+        <svg class="icon icon--accent"><use href="#i-waves"/></svg><i></i>
+        <svg class="icon icon--accent"><use href="#i-home"/></svg>
+      </div>
+      <ul class="route">
+        <li><svg class="icon"><use href="#i-mountain"/></svg>Pucón</li>
+        <li><svg class="icon"><use href="#i-waves"/></svg>Lago Villarrica</li>
+        <li class="is-dark"><svg class="icon"><use href="#i-home"/></svg>Bellavista</li>
+      </ul>
+      <h2 class="display display--xl" data-i18n="book.title">La próxima<br>vista<br><em>puede ser la tuya.</em></h2>
+      <p class="booking__lead" data-i18n="book.lead">Cuéntanos en qué fechas quieren viajar y cuántas personas serán. Organizaremos una conversación tranquila para imaginar la llegada, el ritmo de los días y una estadía a la medida de tu grupo en Bellavista.</p>
+      <ul class="booking__facts">
+        <li><svg class="icon icon--accent"><use href="#i-users"/></svg><span data-i18n="book.f1">Casa para hasta 10 personas</span></li>
+        <li><svg class="icon icon--blue"><use href="#i-pin"/></svg><span data-i18n="book.f2">Pucón, La Araucanía, Chile</span></li>
+        <li><svg class="icon icon--blue"><use href="#i-flame"/></svg><span data-i18n="book.f3">Tinaja con horizonte lacustre</span></li>
+      </ul>
+      <p class="booking__note"><svg class="icon icon--accent"><use href="#i-sparkle"/></svg><span data-i18n="book.note">Tu consulta abre una conversación directa por WhatsApp, sin pasos innecesarios.</span></p>
+    </div>
+
+    <form class="booking__form reveal" id="bookingForm" novalidate>
+      <svg class="arcs arcs--form" viewBox="0 0 400 400" aria-hidden="true">
+        <g fill="none" stroke="currentColor"><circle cx="200" cy="200" r="80"/><circle cx="200" cy="200" r="110"/><circle cx="200" cy="200" r="140"/></g>
+      </svg>
+      <div class="booking__form-head">
+        <h3 data-i18n="form.title">Cuéntanos cómo imaginas tu llegada</h3>
+        <span class="booking__code">B·01</span>
+      </div>
+      <p class="booking__form-sub"><svg class="icon icon--blue"><use href="#i-pin"/></svg><em data-i18n="form.sub">Desde Pucón, conversemos una estadía entre lago, bosque y volcán.</em></p>
+
+      <label class="field">
+        <span data-i18n="form.name">Nombre completo</span>
+        <input type="text" name="nombre" required data-i18n-ph="form.nameph" placeholder="¿Cómo te llamas?">
+      </label>
+      <label class="field">
+        <span data-i18n="form.email">Correo electrónico</span>
+        <input type="email" name="email" required placeholder="nombre@correo.com">
+      </label>
+      <div class="field-row">
+        <label class="field"><span>Check-in</span><input type="date" name="checkin" required></label>
+        <label class="field"><span>Check-out</span><input type="date" name="checkout" required></label>
+      </div>
+      <label class="field">
+        <span data-i18n="form.stay">Tu estadía</span>
+        <textarea name="mensaje" rows="4" data-i18n-ph="form.stayph" placeholder="Fechas aproximadas, número de huéspedes o algo que quieras contar..."></textarea>
+      </label>
+
+      <div class="booking__brand">
+        <div class="signature__brand"><strong>Bellavista</strong><small>Cabaña Boutique</small></div>
+        <div class="trail" aria-hidden="true">
+          <svg class="icon icon--accent"><use href="#i-mountain"/></svg><i></i>
+          <svg class="icon icon--accent"><use href="#i-waves"/></svg><i></i>
+          <svg class="icon icon--accent"><use href="#i-home"/></svg>
+        </div>
+        <span class="kicker kicker--blue">Pucón · Chile</span>
+      </div>
+
+      <button type="submit" class="btn btn--accent btn--block btn--lg"><span data-i18n="form.btn">Abrir conversación</span> <svg class="icon"><use href="#i-send"/></svg></button>
+      <p class="booking__legal" data-i18n="form.legal">Al enviar, se abrirá WhatsApp con los datos de tu consulta listos para compartir con Bellavista Cabaña Boutique.</p>
+      <p class="booking__msg" id="formMsg" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <img src="assets/images/logo/logo.png" alt="Bellavista · Cabaña Boutique · Pucón, Chile" class="footer__logo">
+    <p class="footer__tagline" data-i18n="foot.tag">Una casa de montaña para mirar Pucón desde otra altura.</p>
+    <a href="#inicio" class="link link--light footer__top"><span data-i18n="foot.top">Volver arriba</span> <svg class="icon"><use href="#i-arrow-ur"/></svg></a>
+  </div>
+  <div class="container footer__bottom">
+    <p>© <span id="year"></span> Bellavista Cabaña Boutique · Pucón, Chile</p>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante -->
+<a href="https://wa.me/56965065463?text=Hola%2C%20quiero%20consultar%20disponibilidad%20en%20Bellavista%20Caba%C3%B1a%20Boutique." class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg class="icon icon--lg"><use href="#i-chat"/></svg><span>WhatsApp</span>
+</a>
+
+<!-- Lightbox da galeria -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Galería">
+  <button class="lightbox__btn lightbox__close" aria-label="Cerrar"><svg class="icon icon--lg"><use href="#i-close"/></svg></button>
+  <button class="lightbox__btn lightbox__prev" aria-label="Anterior"><svg class="icon icon--lg" style="transform:scaleX(-1)"><use href="#i-chevron"/></svg></button>
+  <figure class="lightbox__figure">
+    <img src="" alt="" class="lightbox__img">
+    <figcaption class="lightbox__cap"></figcaption>
+  </figure>
+  <button class="lightbox__btn lightbox__next" aria-label="Siguiente"><svg class="icon icon--lg"><use href="#i-chevron"/></svg></button>
+</div>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
