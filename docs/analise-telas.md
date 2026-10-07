@@ -42,3 +42,36 @@
 - Botão outline "RECORRE LA CASA POR AMBIENTE >" + frase em itálico serif
 - Linha divisória com detalhe laranja; "Casa · agua · horizonte" + "Siete momentos para sentir Bellavista..."
 - Grid: foto grande (≈70%) + foto vertical à direita ... (continua)
+- Grid 2 colunas (≈72% / 28%), gap ~44px, cards com legenda branca no rodapé + ícone ↗, gradiente escuro embaixo:
+  1. Llegada a la cabaña (larga) | Sala de estar junto a la estufa (estreita)
+  2. Comedor con vista al lago (larga) | foto vertical alta (tinaja/pôr do sol com garrafas) ocupando 2 linhas
+  3. foto larga (janela com cortinas / roupão) ...
+  4. Vista al volcán desde el fondo de la casa (larga) | Vista abierta al lago (estreita)
+  → total "siete momentos" (7 fotos)
+- Rodapé da galeria: linha fina; ícones montanha — ondas — casa (laranja, ligados por traços); "Bellavista" serif verde + "CABAÑA BOUTIQUE · PUCÓN" caps azul-acinzentado; à direita frase itálica serif "La casa se revela entre madera, agua y montaña."
+
+## 7. Experiencias (split: imagem fixa/sticky à esquerda ≈39%, conteúdo à direita)
+- Esquerda: foto do vulcão Villarrica + lago ao amanhecer; no rodapé "BELLAVISTA" caps, H2 "Tiempo para" / "disfrutar a tu manera." (itálico dourado), "PUCÓN · LA ARAUCANÍA"
+- Direita, eyebrow ícone pegadas: "DISEÑA TU ESTADÍA"
+- H2 "Experiencias para" / "sentir más."
+- Texto: contar o que quer viver em Pucón; coordenamos com antecedência
+- Lista 2x2 com número (azul-acinzentado serif), ícone laranja, título serif, descrição; separadores finos:
+  01 Experiencias de bienestar con hongos – com operadores autorizados e coordenação prévia
+  02 Terapias holísticas – pausa, reconexão, cuidado pessoal
+  03 Deportes de aventura – montanha, água, ar livre
+  04 Gastronomía local – sabores do sul, cozinhas de autor
+- Card verde-escuro (sombra) "SERVICIOS A MEDIDA" + ícone casa no canto:
+  H2 "Mordomías para" / "llegar ligero."
+  Lista 2 col numerada (número dourado): 01 Limpieza diaria · 02 Despensa abastecida · 03 Transfer al aeropuerto · 04 Chofer · 05 Lavandería (cada um com descrição curta)
+  Nota pequena: serviços sujeitos a coordenação prévia/disponibilidade
+  Botão laranja "Coordinar mi estadía ↘"; arcos decorativos no canto inferior direito
+
+## 8. Guía – "QUÉ HACER EN PUCÓN" (fundo verde-escuro com grade fina quadriculada; mapa topográfico estilizado no canto sup. direito)
+- Ícones montanha—ondas—casa
+- H2 "Tu guía para" / "salir a explorar."
+- Texto: parques, água, termas e paisagem: 4 formas de curtir Pucón; confirmar horários com fontes oficiais
+- Cards com foto de fundo + overlay escuro, número dourado no topo, local em caps, título serif, texto, link "Ver información oficial ↗" sublinhado dourado:
+  01 PARQUE NACIONAL HUERQUEHUE – Senderos entre araucarias.
+  02 OJOS DEL CABURGUA – Agua turquesa y cascadas.
+  (03 e 04 provavelmente termas / paisagem – a confirmar)
+- Card mapa à direita: "UBICACIÓN REAL" / "Bellavista, Pucón" + ícone pin; mapa embutido abaixo
